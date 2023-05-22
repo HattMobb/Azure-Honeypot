@@ -35,4 +35,6 @@ Given my interest in cybersecurity, I was naturally curious about how attackers 
   `sudo ./install.sh --type=user` 
   
  - Once installed the SSh session will end and there is a little configuration to be done.
+ - Tpot lists it's required ports to fully function here: https://github.com/telekom-security/tpotce#required-ports
+ - Per the documentation, to allow access to the Tpot dashboard via the browser, port 64294 must be enabled and for SSH access, port 64295  must be enabled. This can be done from the Azure Networking tab by clicking the "add inbound rule" button and setting peramenters. Make sure to set the "Source IP" to your own public network IP so that you are able to access the management options.
   
