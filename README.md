@@ -17,4 +17,22 @@ Given my interest in cybersecurity, I was naturally curious about how attackers 
 - Nothing fancy needs to be configured for disk storage or networking for the purpose of this lab.
 ![Screenshot 2023-05-22 111542](https://github.com/HattMobb/Azure-Honeypot/assets/134090089/0139dc72-c3bd-4e9b-a78e-a5bf6ca40c4e)
 
-- A private key will be generated with which you will use to log into the fresh VM.
+- A private key will be generated with which you will use to log into the fresh VM (if you get stuck, follow these instructions)
+
+
+![Screenshot 2023-05-22 120955](https://github.com/HattMobb/Azure-Honeypot/assets/134090089/0363f4fb-afb5-4413-a535-66993bc439b8)
+
+- Make sure your fresh VM is up to date via 
+  `sudo apt update && sudo apt upgrade -y`
+ 
+- I'm pulling T-pot straight from Github so install Git
+   `sudo apt install git`
+  
+ - Clone the repo onto the VM
+  `https://github.com/dtag-dev-sec/tpotce`
+  
+ - Drill through the directories to the install script and run it via 
+  `sudo ./install.sh --type=user` 
+  
+ - Once installed the SSh session will end and there is a little configuration to be done.
+  
