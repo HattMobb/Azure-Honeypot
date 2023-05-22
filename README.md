@@ -36,5 +36,14 @@ Given my interest in cybersecurity, I was naturally curious about how attackers 
   
  - Once installed the SSh session will end and there is a little configuration to be done.
  - Tpot lists it's required ports to fully function here: https://github.com/telekom-security/tpotce#required-ports
- - Per the documentation, to allow access to the Tpot dashboard via the browser, port 64294 must be enabled and for SSH access, port 64295  must be enabled. This can be done from the Azure Networking tab by clicking the "add inbound rule" button and setting peramenters. Make sure to set the "Source IP" to your own public network IP so that you are able to access the management options.
+ - Per the documentation, to allow access to the Tpot dashboard via the browser, port 64297 must be enabled and for SSH access, port 64295  must be enabled. This can be done from the Azure Networking tab by clicking the "add inbound rule" button and setting peramenters. Make sure to set the "Source IP" of the SSH and BROWSER rules to your own public network IP so that you are able to access the management options. The last rule opens ports and allows us to collect attacker information as the machine is targeted.
+
+![Screenshot 2023-05-22 140522](https://github.com/HattMobb/Azure-Honeypot/assets/134090089/59102268-127a-4b5a-9767-e444a45849fb)
+
+- Once rules are in place, you can navigate to https://<YOUR_VM_IP>:64297 to view the Tpot browser access page 
+![Screenshot 2023-05-22 135331](https://github.com/HattMobb/Azure-Honeypot/assets/134090089/a396ce55-ffca-420e-ae3b-8af458dea243)
+
+- Or via SSH with `ssh -i <private key path> username@YOUR_VM_IP -p 64295`
+
+
   
