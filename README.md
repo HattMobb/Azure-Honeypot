@@ -48,4 +48,14 @@ Given my interest in cybersecurity, I was naturally curious about how attackers 
 - You can view many different stats about attacks on your machine via the Kibina - Dashboard options 
 
 
+
+![Screenshot 2023-05-22 144021](https://github.com/HattMobb/Azure-Honeypot/assets/134090089/a1bd2ebc-264f-469e-ada9-e1dbda8f2cbd)
+
+
+![Screenshot 2023-05-22 144055](https://github.com/HattMobb/Azure-Honeypot/assets/134090089/47fcd279-0eb2-4c00-9ad8-cb6161d99ce9)
+
+
+
+- Play around and check out the attacks that start pouring in.
+
   
